@@ -5,21 +5,21 @@
 class Gorcb < Formula
   desc "CLI tool for reinforced concrete beam design based on NSCP"
   homepage "https://github.com/alexiusacademia/gorcb"
-  version "1.0.2"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alexiusacademia/gorcb/releases/download/v1.0.2/gorcb_1.0.2_darwin_amd64.tar.gz"
-      sha256 "e6463c2c50a57cc7abc8cd21958d2ede4d8618728453bf6a5b9fffe4bc6e4e64"
+      url "https://github.com/alexiusacademia/gorcb/releases/download/v1.1.0/gorcb_1.1.0_darwin_amd64.tar.gz"
+      sha256 "9524acd152f799dc629062c0ab2dc7946ffb1ef513577ae269f2cfbb0ed59d01"
 
       def install
         bin.install "gorcb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alexiusacademia/gorcb/releases/download/v1.0.2/gorcb_1.0.2_darwin_arm64.tar.gz"
-      sha256 "c863c8fe0f5163adf3b9444ae722ebee00f7bedf3f76765aa56dd312f4ec5575"
+      url "https://github.com/alexiusacademia/gorcb/releases/download/v1.1.0/gorcb_1.1.0_darwin_arm64.tar.gz"
+      sha256 "25c1c28d0420f70759e3c331f79469f6ca8ef592aa65c4851c4e7afc927aa576"
 
       def install
         bin.install "gorcb"
@@ -29,15 +29,15 @@ class Gorcb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alexiusacademia/gorcb/releases/download/v1.0.2/gorcb_1.0.2_linux_amd64.tar.gz"
-      sha256 "a38d68801ac9ccbfd88a8de4d6fb167f958eda43ba87656c40d17ca073fa0447"
+      url "https://github.com/alexiusacademia/gorcb/releases/download/v1.1.0/gorcb_1.1.0_linux_amd64.tar.gz"
+      sha256 "3e0a151adac62c41cf1b76ddb28d96fc5b5eb4b0f8ee28bdc5313ab1cffef598"
       def install
         bin.install "gorcb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alexiusacademia/gorcb/releases/download/v1.0.2/gorcb_1.0.2_linux_arm64.tar.gz"
-      sha256 "48b2f715cc312159585dd5a496e6dc313c2c9a7d5f2ac45b99dd81955dcd4c33"
+      url "https://github.com/alexiusacademia/gorcb/releases/download/v1.1.0/gorcb_1.1.0_linux_arm64.tar.gz"
+      sha256 "298b71346f438997ed02b1ac2505900ec4f7f22cbc2a932b39d99f96638d27b7"
       def install
         bin.install "gorcb"
       end
